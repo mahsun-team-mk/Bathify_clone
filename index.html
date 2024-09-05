@@ -3,72 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bathify Clone
-    </title>
+    <title>Bathify Clone</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        header{
+        header {
             width: 1263px;
             height: 81px;
-            /* border: 1px solid ; */
             padding: 20px 10px 10px;
+            display: flex;
+            justify-content: space-between;
         }
-        .discount{
-            width:100%;
+        .discount {
+            width: 100%;
             height: 40px;
-            background-color:#1a8efa;
+            background-color: #1a8efa;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
         }
-        a{
+        a {
             text-decoration: none;
             color: white;
         }
-        img{
-            height:20px;
+        img {
+            height: 20px;
             width: 20px;
-            margin: 0px 10px 0px 0px;
+            margin: 0 10px 0 0;
         }
-.nav{
-    display: flex;
-    align-items: center;
-}
-
-        .site-logo
-img{
-    width: 128px;
-    height: 51px;
-}
- input{
-    width: 673.88px;
-    height: 48px;
-    font-size: ;
-}
-
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        .site-logo img {
+            width: 128px;
+            height: 51px;
+        }
+        .search {
+            border: none;
+        }
+        input {
+            width: 673.88px;
+            height: 48px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            font-size: 1rem;
+            border: .2px solid gray;
+        }
+        .search-icon {
+            height: 48px;
+            background-color: #1a8efa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .flag {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-left: 40px;
+        }
+        .flag img {
+            width: 65px;
+            height: 43px;
+        }
+        .first-p {
+            font-size: .75em;
+        }
+        .second-p {
+            font-size: .75em;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="discount">
         <img src="images/icons8-sale-64.png" alt="">
-         <p>Upto 40% OFF + FREE Ground Shiping<a href="#"> (Shop Now)</a></p>
-       </div>      
+        <p>Upto 40% OFF + FREE Ground Shipping<a href="#"> (Shop Now)</a></p>
+    </div>      
     <header>
-          
-          <div class="nav">
-       <div class="site-logo" href="/">
-        <img src="images/Bathify_2023_Logo_Web_425x170.avif" alt="">
-       </div>   
-       <div class="search">
-        <input type="search" placeholder="What you looking for">
-       </div>
-    </div>
+        <div class="nav">
+            <div class="site-logo" href="/">
+                <img src="images/Bathify_2023_Logo_Web_425x170.avif" alt="">
+            </div>   
+            <div class="search">
+                <input type="search" placeholder="What you looking for">
+            </div>
+            <div class="search-icon">
+                <p><i class="fa fa-search" style="font-size:24px"></i></p>
+            </div>
+            <div class="flag">
+                <img src="images/America-44.png" alt="">
+                <p class="first-p">USA-Wide</p>
+                <p class="second-p">Shipping</p>
+            </div>
+        </div>
     </header>
-    
 </body>
 </html>
