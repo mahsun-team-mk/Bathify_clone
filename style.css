@@ -1,0 +1,247 @@
+/* Global reset for margin, padding, and box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body default font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Discount banner styling */
+.discount {
+    width: 100%;
+    height: 40px;
+    background-color: #1a8efa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.discount img {
+    margin-right: 10px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Image styling */
+img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Navigation container */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust as necessary */
+}
+
+/* Site logo styling */
+.site-logo img {
+    margin-left: 20px;
+    width: 128px;
+    height: 51px;
+}
+
+/* Search input and icon styling */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    width: 673.88px;
+    height: 48px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 1rem;
+    border: 0.2px solid gray;
+}
+
+.search-icon {
+    height: 48px;
+    background-color: #1a8efa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Flag styling */
+.flag {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.flag img {
+    width: 65px;
+    height: 43px;
+}
+
+/* User section styling */
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.user p {
+    margin-left: 2px;
+    margin-top: 7px;
+}
+
+/* Cart icon styling */
+.cart {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Header 1 styling */
+header.header-1 {
+    width: 1263px;
+    height: 81px;
+    padding: 20px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header 2 styling */
+.header-2 {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    align-items: center;
+    justify-content: space-between; /* Distributes space between left and right panels */
+}
+
+/* Left panel styling */
+.left-panel {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 7px;
+}
+
+/* Operations select styling */
+.ops {
+    display: flex;
+    gap: 10px; /* Adds spacing between select elements */
+}
+
+.ops select {
+    border: 2px solid transparent; /* Transparent border to maintain layout */
+    font-size: .95em;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.ops select:focus {
+    outline: 3px solid gray; 
+    cursor: pointer;
+}
+
+/* Right panel styling */
+.right-panel {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    width: 100%; /* Ensures it takes full width if needed */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make <ul> a flex container to align <li> horizontally */
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+}
+
+/* Hero Section styling */
+.hero-section {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 30px;
+    position: relative; /* Ensures the black box is positioned relative to this container */
+}
+
+/* Box 1 styling */
+.box-1 {
+    width: 800px;
+    height: 500px;
+    position: relative; /* Allows child elements to be positioned absolutely */
+}
+
+/* Image styling */
+.box-1 img {
+    width: 100%; /* Adjusts to the size of .box-1 */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 5px;
+    display: block; /* Removes extra space below the image */
+}
+
+/* Black box styling */
+.box-1-child {
+    position: absolute;
+    width: 410px;
+    height: 219px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 85%);
+    padding: 40px;
+    top: 50px; /* Adjust to position vertically */
+    left: 50px; /* Adjust to position horizontally */
+}
+.box-1-child h2{
+    color: white;
+
+    
+    width: 350px;
+    height: 58px;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background: #1a8efa;
+    margin-top: 20px;   
+}
+.btn button{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background: #1a8efa;
+    align-items: center;
+    width: 225px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+}
+
+.btn button img{
+    width: 20px;
+    height: 20px;
+}
+.btn button:hover{
+   background-color:  #0175e2;
+}
