@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bathify Clone</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="discount">
-        <img src="images/icons8-sale-64.png" alt="">
-        <p>Upto 40% OFF + FREE Ground Shipping<a href="#"> (Shop Now)</a></p>
-    </div>      
-    <header>
+        <img src="images/icons8-sale-64.png" alt="Sale Icon">
+        <p>Upto 40% OFF + FREE Ground Shipping <a href="#">(Shop Now)</a></p>
+    </div>
+    <header class="header-1">
         <div class="nav">
             <div class="site-logo" href="/">
-                <img src="images/Bathify_2023_Logo_Web_425x170.avif" alt="">
+                <img src="images/Bathify_2023_Logo_Web_425x170.avif" alt="Bathify Logo">
             </div>   
             <div class="search">
                 <input type="search" placeholder="What you looking for">
@@ -24,11 +24,63 @@
                 <p><i class="fa fa-search" style="font-size:24px"></i></p>
             </div>
             <div class="flag">
-                <img src="images/America-44.png" alt="">
-                <p class="first-p">USA-Wide</p>
-                <p class="second-p">Shipping</p>
+                <img src="images/America-44.png" alt="Flag">
+                <div class="add">
+                    <span class="first-p">USA-Wide</span>
+                    <span class="second-p">Shipping</span>
+                </div>
+            </div>
+            <div class="user">
+                <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8234 16.826C17.1462 16.826 20.6504 13.2833 20.6504 8.913C20.6504 4.54277 17.1462 1 12.8234 1C8.50073 1 4.99646 4.54277 4.99646 8.913C4.99646 13.2833 8.50073 16.826 12.8234 16.826Z" stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M25 29C23.1572 23.8824 18.3453 20.4763 12.9584 20.4763C7.57143 20.4763 2.7596 23.8824 0.91687 29" stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <p>Login</p>
+            </div>
+            <div class="cart">
+                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.25C0.585786 0.25 0.25 0.585786 0.25 1C0.25 1.41421 0.585786 1.75 1 1.75V0.25ZM3.69231 2.61538L4.40382 2.37821L3.69231 2.61538ZM26.79 20.1268L27.5255 20.2739L26.79 20.1268ZM7.16904 20.8873L6.43061 21.0185L7.16904 20.8873ZM1 1.75C1.26956 1.75 1.72558 1.8146 2.14175 2.00506C2.5505 2.19211 2.85163 2.46506 2.9808 2.85256L4.40382 2.37821C4.10221 1.4734 3.41617 0.938658 2.76594 0.641096C2.12314 0.346935 1.44839 0.25 1 0.25V1.75ZM9.1395 23.2885H23.8483V21.7885H9.1395V23.2885ZM27.5255 20.2739L29.4962 10.4201L28.0253 10.126L26.0546 19.9797L27.5255 20.2739ZM2.9808 2.85256C3.05508 3.07542 3.22161 3.81287 3.45673 4.96928C3.6864 6.09888 3.97076 7.57172 4.28036 9.21573L5.75445 8.93812C5.44435 7.29151 5.15846 5.81048 4.92665 4.67041C4.7003 3.55715 4.51413 2.70914 4.40382 2.37821L2.9808 2.85256ZM4.28036 9.21573C4.98545 12.9597 5.819 17.578 6.43061 21.0185L7.90746 20.756C7.29546 17.3134 6.4609 12.6894 5.75445 8.93812L4.28036 9.21573ZM27.7802 8.32692H5.01741V9.82692H27.7802V8.32692ZM29.4962 10.4201C29.7128 9.33724 28.8845 8.32692 27.7802 8.32692V9.82692C27.938 9.82692 28.0563 9.97125 28.0253 10.126L29.4962 10.4201ZM23.8483 23.2885C25.6358 23.2885 27.1749 22.0267 27.5255 20.2739L26.0546 19.9797C25.8442 21.0314 24.9208 21.7885 23.8483 21.7885V23.2885ZM9.1395 21.7885C8.53266 21.7885 8.01369 21.3536 7.90746 20.756L6.43061 21.0185C6.6641 22.3319 7.80538 23.2885 9.1395 23.2885V21.7885Z" fill="#1D1D1D"></path>
+                    <circle cx="11.2307" cy="27.3846" r="1.61538" fill="#1D1D1D"></circle>
+                    <circle cx="23.0769" cy="27.3846" r="1.61538" fill="#1D1D1D"></circle>
+                </svg>
             </div>
         </div>
     </header>
+
+    <header class="header-2">
+        <div class="left-panel">
+            <p class="ops">
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+                <select>
+                    <option>Option A</option>
+                    <option>Option B</option>
+                </select>
+            </p>
+        </div>
+        <div class="right-panel">
+            <ul>
+                <li><a href="#">Order Tracker</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="box-1">
+            <img src="images/bath-tub1.jpg" alt="Example Image">
+            <div class="box-1-child">
+                <h2>Shop Modern. Shop Affordable</h2>
+                <div class="line"></div>
+                <div class="btn">
+                    <button>Shop Now &nbsp; 
+                      <img src="images/Shopping_Cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
