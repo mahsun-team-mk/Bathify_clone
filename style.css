@@ -151,7 +151,7 @@ header.header-1 {
 }
 
 .ops select:focus {
-    outline: 3px solid gray; 
+    outline: 3px solid gray;
     cursor: pointer;
 }
 
@@ -176,12 +176,18 @@ ul li {
 
 /* Hero Section styling */
 .hero-section {
-    /* border: 2px solid black; */
     width: 100%;
-    height: 500px;
+    padding: 20px;
     display: flex;
-    padding: 30px;
-    position: relative; /* Ensures the black box is positioned relative to this container */
+    flex-direction: column; /* Stack rows vertically */
+    gap: 20px;
+}
+
+/* Row containing Box 1 and Box 2 */
+.hero-row {
+    display: flex;
+    justify-content: space-between; /* Aligns Box 1 and Box 2 horizontally */
+    gap: 20px;
 }
 
 /* Box 1 styling */
@@ -191,7 +197,7 @@ ul li {
     position: relative; /* Allows child elements to be positioned absolutely */
 }
 
-/* Image styling */
+/* Image styling for Box 1 */
 .box-1 img {
     width: 100%; /* Adjusts to the size of .box-1 */
     height: auto; /* Keeps aspect ratio */
@@ -199,31 +205,32 @@ ul li {
     display: block; /* Removes extra space below the image */
 }
 
-/* Black box styling */
+/* Black box styling within Box 1 */
 .box-1-child {
     position: absolute;
     width: 410px;
     height: 219px;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0, 85%);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 40px;
     top: 50px; /* Adjust to position vertically */
     left: 50px; /* Adjust to position horizontally */
 }
-.box-1-child h2{
-    color: white;
 
-    
+.box-1-child h2 {
+    color: white;
     width: 350px;
     height: 58px;
 }
-.line{
+
+.line {
     width: 50px;
     height: 2px;
     background: #1a8efa;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
-.btn button{
+
+.btn button {
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -238,10 +245,121 @@ ul li {
     border: none;
 }
 
-.btn button img{
+.btn button img {
     width: 20px;
     height: 20px;
 }
-.btn button:hover{
-   background-color:  #1a8efa;
+
+.btn button:hover {
+    background-color: #1a8efa;
+}
+
+/* Box 2 styling */
+.box-2 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.box-2 h3 {
+    margin-top: 20px;
+    width: 100%; /* Adjust to fit within the box */
+    height: auto; /* Adjust height dynamically */
+}
+
+/* Deal image styling in Box 2 */
+.deal-img {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.deal-img img {
+    width: 150px;
+    height: 120px;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.product-desc {
+    font-size: 12px;
+    margin: 10px 8px;
+}
+
+.shop-now {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.shop-now a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Shipping Icons styling */
+.shipping-icons {
+    width: 450px; /* Adjusted to full width for better responsiveness */
+    
+    height: auto; /* Allow height to adjust based on content */
+    border: 1px solid silver;
+    margin-top: -80px;
+    border-radius: 5px;
+    gap: 30px; /* Space between icons */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap to the next line */
+    justify-content: space-between; /* Distribute icons evenly */
+}
+
+.ship-box {
+   
+    justify-content: center; /* Center align icons within the box */
+    align-items: center;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.ship-box img {
+    width: 37px;
+    height: 31px;
+}
+
+.van-img {
+    text-align: center;
+}
+
+.ship-box h3 {
+    text-align: center;
+}
+
+.shipping-text p {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 10px;
+    }
+
+    .hero-row {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .box-1, .box-2 {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Adjust height as needed */
+    }
+
+    .shipping-icons {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    
 }
