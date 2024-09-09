@@ -303,8 +303,8 @@ ul li {
 
 /* Shipping Icons styling */
 .shipping-icons {
-    width: 450px; /* Adjusted to full width for better responsiveness */
-    
+    width: 100%; /* Adjusted to full width for better responsiveness */
+    max-width: 450px; /* Limit the maximum width for a more controlled layout */
     height: auto; /* Allow height to adjust based on content */
     border: 1px solid silver;
     margin-top: -80px;
@@ -317,9 +317,11 @@ ul li {
 }
 
 .ship-box {
-   
+    flex: 1 1 calc(50% - 30px); /* Adjust to fit two items per row with gap */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center align icons within the box */
-    align-items: center;
+    align-items: center; /* Center align items horizontally */
     margin-bottom: 20px; /* Space between rows */
 }
 
@@ -361,5 +363,7 @@ ul li {
         margin-top: 0;
     }
 
-    
+    .ship-box {
+        flex: 1 1 100%; /* Ensure each icon takes full width on small screens */
+    }
 }
